@@ -14,7 +14,7 @@ func main() {
 		Usage: "Aplicación para saber todo sobre la navidad...",
 		Commands: []*cli.Command{
 			{
-				Name:    "¿Cuantas semanas faltan para navidad?",
+				Name:    "semanas-para-navidad",
 				Aliases: []string{"s"},
 				Usage:   "Te muestra cuantas semanas faltan para navidad",
 				Action: func(cCtx *cli.Context) error {
@@ -23,8 +23,8 @@ func main() {
 				},
 			},
 			{
-				Name:    "¿Es navidad?",
-				Aliases: []string{"n"},
+				Name:    "es-navidad",
+				Aliases: []string{"e"},
 				Usage:   "Te dice si es navidad",
 				Action: func(cCtx *cli.Context) error {
 					DrawInTerminalChristmas()
